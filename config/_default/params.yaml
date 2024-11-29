@@ -6,7 +6,7 @@
 # Appearance
 appearance:
   mode: system
-  color: blue
+  color: emerald
 
 # SEO
 marketing:
@@ -14,7 +14,7 @@ marketing:
     site_type: Person
     local_business_type: ''
     org_name: ''
-    description: 'A highly-customizable Hugo résumé theme powered by Hugo Blox Builder.'
+    description: 'The highly-customizable Hugo Academic theme powered by Hugo Blox Builder. Easily create your personal academic website.'
     twitter: 'GetResearchDev'
   analytics:
     google_analytics: ''
@@ -30,7 +30,12 @@ marketing:
 header:
   navbar:
     enable: true
-    blox: floating-theme-toggler
+    blox: "navbar"
+    fixed_to_top: true
+    show_search: true
+    show_theme_chooser: true
+    logo:
+      text: "Your Name"
 
 # Site footer
 footer:
