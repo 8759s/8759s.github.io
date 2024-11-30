@@ -34,7 +34,7 @@ profiles:
     url: '8759shuang@gmail.com'
     label: E-mail Me
   - icon: brands/github
-    url: https://github.com/gcushen
+    url: https://github.com/8759s
   - icon: brands/linkedin
     url: https://www.linkedin.com/in/shawn-shuang/
   - icon: academicons/google-scholar
@@ -175,4 +175,4 @@ work:
 
 ## About Me
 
-PhD candidate in Web Security and Computer Engineering at the University of Toronto, with a strong focus on improving security and privacy in web applications. Experienced in network security, system security, and software vulnerability analysis, with hands-on expertise in defending against user-impersonation attacks, detecting web trackers, and mitigating security risks in software-defined networks. Proven track record in academic research with multiple peer-reviewed publications in top-tier conferences such as NDSS and DSN. Proficient in programming languages such as Python, R, C/C++, and tools including fuzzers, dynamic analysis frameworks, and machine learning libraries. Currently seeking full-time research or software engineering roles for Summer/Fall 2025, with a strong desire to apply advanced security techniques in industry settings.
+I am a PhD candidate in Computer Engineering at the University of Toronto. My research intrest is on improving security and privacy in the web, system and applications. Currently seeking full-time research or software engineering roles for Summer/Fall 2025.
