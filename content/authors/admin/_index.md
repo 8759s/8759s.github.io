@@ -41,7 +41,7 @@ profiles:
     url: https://scholar.google.com/citations?user=t3k6t68AAAAJ&hl=en
   
 interests:
-  - Web, program and system security
+  - Software security
   - Machine learning and large language models
 
 education:
