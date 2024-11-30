@@ -18,7 +18,7 @@ authors:
 # doi: ''
 
 # # Schedule page publish date (NOT publication's date).
-publishDate: '2025-01-01T00:00:00Z'
+publishDate: '2024-01-01T00:00:00Z'
 
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
@@ -46,7 +46,7 @@ publication_short: In *NDSS*
 # #   url: http://example.org
 
 # url_pdf: ''
-# url_code: 'https://github.com/HugoBlox/hugo-blox-builder'
+url_code: 'https://github.com/dlgroupuoft/Duumviri-NDSS25'
 # url_dataset: 'https://github.com/HugoBlox/hugo-blox-builder'
 # url_poster: ''
 # url_project: ''

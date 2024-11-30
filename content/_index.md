@@ -30,20 +30,20 @@ sections:
           size: cover
           position: center
           parallax: false
-  - block: markdown
-    content:
-      title: 'My Research'
-      subtitle: ''
-      text: |-
-        Web security 
+  # - block: markdown
+  #   content:
+  #     title: 'My Research'
+  #     subtitle: ''
+  #     text: |-
+  #       Web security 
 
-        Machine learning for security 
+  #       Machine learning for security 
 
-        Large language model for security 
+  #       Large language model for security 
 
        
-    design:
-      columns: '1'
+    # design:
+    #   columns: '1'
   # - block: collection
   #   id: papers
   #   content:
