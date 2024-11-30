@@ -29,13 +29,13 @@ marketing:
 # Site header
 header:
   navbar:
-    enable: true
+    enable: false
     blox: "navbar"
     fixed_to_top: true
     show_search: true
     show_theme_chooser: true
     logo:
-      text: "He (Shawn) Shuang"
+      text: "He (Shawn) Shuang | 双壑"
 
 # Site footer
 footer:

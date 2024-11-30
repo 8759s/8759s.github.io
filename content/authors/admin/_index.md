@@ -1,6 +1,6 @@
 ---
 # Display name
-title: He (Shawn) Shuang
+title: He (Shawn) Shuang | 双壑
 
 # Name pronunciation (optional)
 name_pronunciation: 
@@ -45,7 +45,7 @@ interests:
   - Machine learning and large language models
 
 education:
-  - area: PhD Web Security
+  - area: PhD 
     institution: University of Toronto
     date_start: 2020-01-01
     date_end: 2025-08-31
@@ -54,14 +54,14 @@ education:
     button:
       text: 'Read Thesis'
       url: 'https://example.com'
-  - area: MASc Web Security
+  - area: MASc 
     institution: University of Toronto
     date_start: 2017-09-01
     date_end: 2019-12-31
     summary: |
       Thesis _Using Context to Verify Human Intent_. Supervised by [Prof David Lie](https://security.csl.toronto.edu/). Presented papers at ApSys. 
       
-  - area: BSc Computer Science
+  - area: BSc
     institution: University of Toronto
     date_start: 2011-09-01
     date_end: 2016-08-31
@@ -173,6 +173,6 @@ work:
 #       Object-oriented programming (OOP) lets you specify relationships between functions and the objects that they can act on, helping you manage complexity in your code. This is an intermediate level course, providing an introduction to OOP, using the S3 and R6 systems. S3 is a great day-to-day R programming tool that simplifies some of the functions that you write. R6 is especially useful for industry-specific analyses, working with web APIs, and building GUIs.
 ---
 
-## About Me
+## He (Shawn) Shuang | 双壑
 
 I am a PhD candidate in Computer Engineering at the University of Toronto. My research intrest is on improving security and privacy in the web, system and applications. Currently seeking full-time research or software engineering roles for Summer/Fall 2025.
