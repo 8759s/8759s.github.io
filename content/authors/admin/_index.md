@@ -1,6 +1,6 @@
 ---
 # Display name
-title: He (Shawn) Shuang | 双壑
+title: He Shuang
 
 # Name pronunciation (optional)
 name_pronunciation: 
@@ -11,7 +11,7 @@ last_name: Shuang
 
 # Status emoji
 status:
-  icon: ☕️
+  icon: 
 
 # Is this the primary user of the site?
 superuser: true
@@ -173,6 +173,6 @@ work:
 #       Object-oriented programming (OOP) lets you specify relationships between functions and the objects that they can act on, helping you manage complexity in your code. This is an intermediate level course, providing an introduction to OOP, using the S3 and R6 systems. S3 is a great day-to-day R programming tool that simplifies some of the functions that you write. R6 is especially useful for industry-specific analyses, working with web APIs, and building GUIs.
 ---
 
-## He (Shawn) Shuang | 双壑
+## He (Shawn) Shuang
 
 I am a PhD candidate in Computer Engineering at the University of Toronto. My research intrest is on improving security and privacy in the web, system and applications. Currently seeking full-time research or software engineering roles for Summer/Fall 2025.
