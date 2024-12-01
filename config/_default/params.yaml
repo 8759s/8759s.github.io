@@ -14,8 +14,8 @@ marketing:
     site_type: Person
     local_business_type: ''
     org_name: ''
-    description: 'The highly-customizable Hugo Academic theme powered by Hugo Blox Builder. Easily create your personal academic website.'
-    twitter: 'GetResearchDev'
+    description: 'PhD Candidate in Computer Security at the University of Toronto'
+    # twitter: 'GetResearchDev'
   analytics:
     google_analytics: ''
     baidu_tongji: ''
@@ -23,8 +23,9 @@ marketing:
     fathom: ''
     pirsch: ''
   verification:
-    google: ''
+    google: 'klINrWJjYY6Y9qt4Z-z-0PFdAK7UNM_Drv2HuULI3VE'
     baidu: ''
+
 
 # Site header
 header:
