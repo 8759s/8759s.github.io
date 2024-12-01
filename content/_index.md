@@ -35,18 +35,21 @@ sections:
       title: 'My Research'
       subtitle: ''
       text: |-
-        ## Web security 
+        #### Web Security 
 
-        Web security is a dynamic and evolving research area, where malicious actors continuously develop new methods to extract or exchange undesirable information from user clients, while detectors strive to identify and mitigate such activities. This constant struggle represents an arms race, as attackers find novel ways to bypass detection, and defenders innovate to counter them. Reliable detection mechanisms hinge on the development of creative client-side tools that gather contextual information about web requests to identify unauthorized information exchanges. My research projects, vWitness and Duumviri, exemplify this approach by using contextual data to detect and block undesirable activities. For instance, vWitness leverages user-provided inputs extracted from a series of screenshots leading to the generation of a request to uncover user-impersonating requests, while Duumviri the consequential effect of blocking a request to identify trackers. However, these are just the beginning --- there remains significant potential for further exploration into advanced contextual information, including browser state dynamics, fine-grained user interaction data, and even AI-powered behavioral models, to enhance web security.
-
-
+        ###### Web security is a dynamic and evolving research area, where malicious actors continuously develop new methods to extract or exchange undesirable information from  clients, while detectors strive to identify such activities. This constant struggle represents an arms race. Reliable detection mechanisms benefit from the development of creative client-side tools that gather contextual information about web requests to identify undesirable information exchanges. My research projects, vWitness and Duumviri, exemplify this approach by using contextual data to detect and block undesirable activities. For instance, vWitness leverages user-provided inputs extracted from a series of screenshots leading to the generation of a request to uncover user-impersonating requests, while Duumviri the consequential effect of blocking a request to identify trackers. However, these are just the beginning --- there remains significant potential for further exploration into advanced contextual information, including browser state dynamics, fine-grained user interaction data, and even AI-powered behavioral models, to enhance web security.
 
 
 
-
-        ## Vulnerability detection and fixing
+        #### Vulnerabilities
         
-        Vulnerability detection and patching is a critical area of research in computer security due to the unavoidable presence of bugs in software systems. These bugs, if exploited, can lead to devastating consequences such as data breaches, ransomware attacks, or critical infrastructure failures. Detecting, verifying, fixing, and testing vulnerabilities often requires significant human effort, relying on expertise that is time-consuming and prone to error. For example, processes like static analysis to identify potential vulnerabilities or creating a secure patch for a zero-day exploit demand a highly skilled workforce. Large Language Models (LLMs), such as OpenAI’s GPT series, show promise in augmenting these tasks by mimicking human decision-making. LLMs can improve efficiency in triaging reports, identifying code smells, and even suggesting fixes for vulnerabilities. For instance, they can assist in analyzing code for common vulnerabilities like SQL injection or buffer overflows and generate automated test cases to validate patches. By integrating LLMs, the software security lifecycle can become faster and more accurate, reducing the time that vulnerabilities remain exploitable.
+        ###### Bugs in software systems are inevitable, and vulnerabilities (exploitable bugs) can have devastating consequences, such as data breaches, infrastructure failures, and financial losses, when exploited. Detecting, verifying, fixing vulnerabilities and validating their fixes is a resource-intensive process, requiring significant human expertise that is both time-consuming and prone to error. Large Language Models (LLMs) offer promising solutions by enhancing these tasks with human-like decision-making capabilities. For example, LLMs can detect early signs of emerging vulnerabilities (e.g., from social media activity like tweets), aggregate and synthesize information from diverse sources, assess a system's exploitability based on usage patterns, and even propose potential fixes. By integrating LLMs into the software security lifecycle, organizations can accelerate and improve the accuracy of vulnerability management, reducing the window of opportunity for exploitation.
+
+
+
+
+
+
 
 
 
