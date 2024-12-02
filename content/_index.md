@@ -18,25 +18,14 @@ sections:
       button:
         text: Download CV
         url: https://docs.google.com/document/d/1ldJVn-KgAqguadPmfuXJR01J-toKCi7RZkMcUIMEeXQ/edit?usp=sharing
-  # - block: buttons
-  #   content: 
-  #     buttons:
-  #       - title: Download CV
-  #         url: https://docs.google.com/document/d/1ldJVn-KgAqguadPmfuXJR01J-toKCi7RZkMcUIMEeXQ/edit?usp=sharing 
-  #       - title: Download Resume
-  #         url: https://docs.google.com/document/d/1nFI1ov0UeHxTUXksuZIgvXToLbcZqXzx/edit?usp=sharing&ouid=117630638173681529061&rtpof=true&sd=true
   - block: buttons
-    content:
-      buttons:
-        - title: Read my latest paper on LLMs
-          icon: brands/arxiv
-          url: https://arxiv.org/abs/2304.01852
-        - title: Watch my new YouTube video to achieve 20x productivity
-          icon: brands/youtube
-          url: https://youtube.com
-        - title: Connect with me on LinkedIn
-          icon: brands/linkedin
-          url: https://linkedin.com
+    content: 
+      button:
+        text: Download CV
+        url: https://docs.google.com/document/d/1ldJVn-KgAqguadPmfuXJR01J-toKCi7RZkMcUIMEeXQ/edit?usp=sharing 
+      button:  
+        text: Download Resume
+        url: https://docs.google.com/document/d/1nFI1ov0UeHxTUXksuZIgvXToLbcZqXzx/edit?usp=sharing&ouid=117630638173681529061&rtpof=true&sd=true
   - block: markdown
     content:
       title: 'My Research'
