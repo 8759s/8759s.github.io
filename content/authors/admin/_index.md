@@ -35,15 +35,18 @@ profiles:
     label: E-mail Me
   - icon: brands/github
     url: https://github.com/8759s
+    label: GitHub
   - icon: brands/linkedin
     url: https://www.linkedin.com/in/shawn-shuang/
+    label: Linkedin
   - icon: academicons/google-scholar
     url: https://scholar.google.com/citations?user=t3k6t68AAAAJ&hl=en
+    label: Google Scholar
   - icon: academicons/cv
-    url: assets/shawn_cv.pdf
+    url: static/shawn_cv.pdf
     label: CV
   - icon: devicon/readthedocs
-    url: assets/shawn_resume.pdf
+    url: static/shawn_resume.pdf
     label: Resume
   
 interests:
