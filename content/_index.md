@@ -15,16 +15,16 @@ sections:
       username: admin
       text: ""
       # Show a call-to-action button under your biography? (optional)
-      button:
-        text: Download CV
-        url: https://docs.google.com/document/d/1ldJVn-KgAqguadPmfuXJR01J-toKCi7RZkMcUIMEeXQ/edit?usp=sharing
-  - block: markdown
-      button:
-        text: Download CV
-        url: https://docs.google.com/document/d/1ldJVn-KgAqguadPmfuXJR01J-toKCi7RZkMcUIMEeXQ/edit?usp=sharing 
-      button:
-        text: Download Resume
-        url: https://docs.google.com/document/d/1nFI1ov0UeHxTUXksuZIgvXToLbcZqXzx/edit?usp=sharing&ouid=117630638173681529061&rtpof=true&sd=true
+      # button:
+      #   text: Download CV
+      #   url: https://docs.google.com/document/d/1ldJVn-KgAqguadPmfuXJR01J-toKCi7RZkMcUIMEeXQ/edit?usp=sharing
+  - block: buttons
+      cotnent: 
+        buttons:
+          - title: Download CV
+            url: https://docs.google.com/document/d/1ldJVn-KgAqguadPmfuXJR01J-toKCi7RZkMcUIMEeXQ/edit?usp=sharing 
+          - title: Download Resume
+            url: https://docs.google.com/document/d/1nFI1ov0UeHxTUXksuZIgvXToLbcZqXzx/edit?usp=sharing&ouid=117630638173681529061&rtpof=true&sd=true
   - block: markdown
     content:
       title: 'My Research'
