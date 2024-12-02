@@ -17,7 +17,7 @@ sections:
       # Show a call-to-action button under your biography? (optional)
       button:
         text: Resume
-        url: static/shawn_resume.pdf
+        url: uploads/shawn_resume.pdf
       
   #   design:
   #     columns: '2'
