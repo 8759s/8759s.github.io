@@ -39,6 +39,12 @@ profiles:
     url: https://www.linkedin.com/in/shawn-shuang/
   - icon: academicons/google-scholar
     url: https://scholar.google.com/citations?user=t3k6t68AAAAJ&hl=en
+  - icon: academicons/cv
+    url: assets/shawn_cv.pdf
+    label: CV
+  - icon: devicon/readthedocs
+    url: assets/shawn_resume.pdf
+    label: Resume
   
 interests:
   - Software security
