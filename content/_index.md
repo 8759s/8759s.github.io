@@ -23,7 +23,7 @@ sections:
         url: https://docs.google.com/document/d/1ldJVn-KgAqguadPmfuXJR01J-toKCi7RZkMcUIMEeXQ/edit?usp=sharing
   - block: collection
     content: 
-      title 
+      title: CV and Resume
       text: |-
         [Download CV](https://docs.google.com/document/d/1ldJVn-KgAqguadPmfuXJR01J-toKCi7RZkMcUIMEeXQ/edit?usp=sharing)
       
