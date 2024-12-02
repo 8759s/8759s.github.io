@@ -184,8 +184,4 @@ work:
 
 ## He (Shawn) Shuang
 
-<<<<<<< HEAD
 I am a PhD candidate in Computer Engineering at the University of Toronto. My research interest is on improving security and privacy in the web, system and applications through use of machine learning and large language models. Currently seeking full-time opportunities in Summer/Fall 2025.
-=======
-I am a PhD candidate in Computer Engineering at the University of Toronto. My research interest is on improving security and privacy in the web, system and applications. Currently seeking full-time opportunities in Summer/Fall 2025.
->>>>>>> d459721bc773550e91f07372c332950fa8cab3e0

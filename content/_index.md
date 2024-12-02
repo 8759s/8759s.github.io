@@ -18,13 +18,18 @@ sections:
       button:
         text: Download CV
         url: https://docs.google.com/document/d/1ldJVn-KgAqguadPmfuXJR01J-toKCi7RZkMcUIMEeXQ/edit?usp=sharing
+  - block: resume-biography-3
+    content:
+      # Choose a user profile to display (a folder name within `content/authors/`)
+      username: admin
+      text: ""  
       button:
         text: Download Resume
         url: https://docs.google.com/document/d/1nFI1ov0UeHxTUXksuZIgvXToLbcZqXzx/edit?usp=sharing&ouid=117630638173681529061&rtpof=true&sd=true
     design:
-      css_class: dark
+      css_class: light
       background:
-        color: black
+        color: white
         image:
           # Add your image background to `assets/media/`.
           # filename: stacked-peaks.svg
