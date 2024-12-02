@@ -43,10 +43,10 @@ profiles:
     url: https://scholar.google.com/citations?user=t3k6t68AAAAJ&hl=en
     label: Google Scholar
   - icon: academicons/cv
-    url: static/shawn_cv.pdf
+    url: https://8759s.github.io/uploads/shawn_cv.pdf
     label: CV
   - icon: devicon/readthedocs
-    url: static/shawn_resume.pdf
+    url: https://8759s.github.io/uploads/shawn_resume.pdf
     label: Resume
   
 interests:
