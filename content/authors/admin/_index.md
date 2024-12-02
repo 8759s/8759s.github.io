@@ -57,9 +57,9 @@ education:
     date_end: 2025-08-31
     summary: |
       Thesis _On the Security and Privacy of Web Requests_. Supervised by [Prof David Lie](https://security.csl.toronto.edu/). Presented papers at conferences such as NDSS and DSN and journals such as CSUR.
-    button:
-      text: 'Read Thesis'
-      url: 'https://example.com'
+    # button:
+    #   text: 'Read Thesis'
+    #   url: 'https://example.com'
   - area: MASc 
     institution: University of Toronto
     date_start: 2017-09-01
