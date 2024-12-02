@@ -18,14 +18,12 @@ sections:
       button:
         text: Download CV
         url: https://docs.google.com/document/d/1ldJVn-KgAqguadPmfuXJR01J-toKCi7RZkMcUIMEeXQ/edit?usp=sharing
-  - block: buttons
+  - block: markdwn
     content: 
-      button:
-        text: Download CV
-        url: https://docs.google.com/document/d/1ldJVn-KgAqguadPmfuXJR01J-toKCi7RZkMcUIMEeXQ/edit?usp=sharing 
-      button:  
-        text: Download Resume
-        url: https://docs.google.com/document/d/1nFI1ov0UeHxTUXksuZIgvXToLbcZqXzx/edit?usp=sharing&ouid=117630638173681529061&rtpof=true&sd=true
+      text: |-
+        [Download CV](https://docs.google.com/document/d/1ldJVn-KgAqguadPmfuXJR01J-toKCi7RZkMcUIMEeXQ/edit?usp=sharing)
+      
+        [Download Resume](https://docs.google.com/document/d/1nFI1ov0UeHxTUXksuZIgvXToLbcZqXzx/edit?usp=sharing&ouid=117630638173681529061&rtpof=true&sd=true)
   - block: markdown
     content:
       title: 'My Research'
