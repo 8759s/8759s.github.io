@@ -18,7 +18,7 @@ sections:
       button:
         text: Download CV
         url: https://docs.google.com/document/d/1ldJVn-KgAqguadPmfuXJR01J-toKCi7RZkMcUIMEeXQ/edit?usp=sharing
-  - block: markdwn
+  - block: markdown
     content: 
       text: |-
         [Download CV](https://docs.google.com/document/d/1ldJVn-KgAqguadPmfuXJR01J-toKCi7RZkMcUIMEeXQ/edit?usp=sharing)
