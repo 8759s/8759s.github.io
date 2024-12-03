@@ -87,8 +87,8 @@ work:
     date_end: ''
     summary: |2-
       Responsibilities include:
-      - Large language model (LLM)-assisted vulnerability early detection reducing vulnerability response time 
-      - LLM-assisted automatically fixing reducing developer effort
+      - Large language model (LLM)-based vulnerability early detection framework reducing vulnerability acknowledge time 
+      - LLM-based vulnerability automatic patcher reducing mean time to respond (MTTR)
   - position: Research Assistant 
     company_name: University of Toronto
     company_url: ''
