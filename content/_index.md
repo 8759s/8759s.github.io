@@ -17,7 +17,7 @@ sections:
       # Show a call-to-action button under your biography? (optional)
       button:
         text: CV
-        url: https://8759s.github.io/uploads/shawn_resume.pdf
+        url: https://8759s.github.io/uploads/shawn_cv.pdf
       
   #   design:
   #     columns: '2'
