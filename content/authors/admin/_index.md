@@ -68,7 +68,7 @@ education:
     date_start: 2017-09-01
     date_end: 2019-12-31
     summary: |
-      Thesis _Using Context to Verify Human Intent_. Supervised by [Prof David Lie](https://security.csl.toronto.edu/). Presented papers at ApSys. 
+      Thesis _Using Context to Verify Human Intent_. Supervised by [Prof David Lie](https://security.csl.toronto.edu/). Presented at ApSys 2019. 
       
   - area: BSc
     institution: University of Toronto
