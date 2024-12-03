@@ -15,4 +15,4 @@ sections:
 # 5. *He Shuang*,Wei Huang, Pushkar Bettadpur, Lianying Zhao, Ivan Pustogarov, and David Lie. 2019. Using inputs and context to verify user intentions in internet services. In Proceedings of the 10th ACM SIGOPS Asia-Pacific Workshop on Systems, 76–83. 
 # 6. Lianying Zhao, *He Shuang*,Shengjie Xu, Wei Huang, Rongzhen Cui, Pushkar Bettadpur, and David Lie. 2019. Sok: Hardware security support for trustworthy execution. arXiv preprint arXiv:1910.04957 (2019). 
 # 7. Wei Huang, Vasily Rudchenko, *He Shuang*,Zhen Huang, and David Lie. 2018. Pearl-TEE: supporting untrusted applications in trustzone. In Proceedings of the 3rd Workshop on System Software for Trusted Execution, 8–13. 
-    
+---
