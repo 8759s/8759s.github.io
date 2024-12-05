@@ -45,7 +45,7 @@ publication_short: In *DSN*
 # # - name: Custom Link
 # #   url: http://example.org
 
-# url_pdf: ''
+url_pdf: 'https://8759s.github.io/uploads/vwitness.pdf'
 url_code: 'https://github.com/dlgroupuoft/vWitness-DSN23'
 # url_dataset: 'https://github.com/HugoBlox/hugo-blox-builder'
 # url_poster: ''

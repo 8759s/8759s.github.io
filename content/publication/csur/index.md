@@ -39,7 +39,7 @@ publication_short: "CSUR"
 # links:
 # - name: ""
 #   url: ""
-url_pdf: https://dl.acm.org/doi/abs/10.1145/3672392
+url_pdf: 'https://8759s.github.io/uploads/csur.pdf'
 # url_code: 'https://github.com/HugoBlox/hugo-blox-builder'
 # url_dataset: ''
 # url_poster: ''
