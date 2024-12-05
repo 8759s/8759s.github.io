@@ -14,5 +14,7 @@ sections:
         4. *He Shuang*. 2020. [Using Context to Verify Human Intent](https://8759s.github.io/uploads/shawn_shuang_masc_thesis.pdf). University of Toronto (Canada). 
         5. *He Shuang*, Wei Huang, Pushkar Bettadpur, Lianying Zhao, Ivan Pustogarov, and David Lie. 2019. [Using inputs and context to verify user intentions in internet services](https://8759s.github.io/uploads/apsys19.pdf). In Proceedings of the 10th ACM SIGOPS Asia-Pacific Workshop on Systems, 76–83. 
         6. Lianying Zhao, *He Shuang*, Shengjie Xu, Wei Huang, Rongzhen Cui, Pushkar Bettadpur, and David Lie. 2019. [Sok: Hardware security support for trustworthy execution](https://8759s.github.io/uploads/sok_arxiv.pdf). arXiv preprint arXiv:1910.04957 (2019). 
-        7. Wei Huang, Vasily Rudchenko, *He Shuang*, Zhen Huang, and David Lie. 2018. [Pearl-TEE: supporting untrusted applications in trustzone](https://8759s.github.io/uploads/whuang_systex18-pearltee). In Proceedings of the 3rd Workshop on System Software for Trusted Execution, 8–13. 
+        7. Wei Huang, Vasily Rudchenko, *He Shuang*, Zhen Huang, and David Lie. 2018. [Pearl-TEE: supporting untrusted applications in trustzone](https://8759s.github.io/uploads/whuang_systex18-pearltee.pdf). In Proceedings of the 3rd Workshop on System Software for Trusted Execution, 8–13. 
+    # design:
+
 ---
