@@ -45,7 +45,7 @@ publication_short: In *NDSS*
 # # - name: Custom Link
 # #   url: http://example.org
 
-# url_pdf: ''
+url_pdf: 'https://8759s.github.io/uploads/duumviri.pdf'
 url_code: 'https://github.com/dlgroupuoft/Duumviri-NDSS25'
 # url_dataset: 'https://github.com/HugoBlox/hugo-blox-builder'
 # url_poster: ''
