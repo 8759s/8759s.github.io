@@ -79,22 +79,13 @@ education:
       
       
 work:
-  - position: Senior Staff Researcher
-    company_name: Palo Alto Networks
-    company_url: ''
-    company_logo: ''
-    date_start: 2024-08-01
-    date_end: ''
-    summary: |
-      Responsibilities include:
-      - Develop machine learning models to detect web attacks
   - position: Researcher
     company_name: Huawei Research Canada
     company_url: ''
     company_logo: ''
     date_start: 2024-05-01
     date_end: ''
-    summary: |
+    summary: |2-
       Responsibilities include:
       - Large language model (LLM)-based vulnerability early detection framework reducing vulnerability acknowledge time 
       - LLM-based vulnerability automatic patcher reducing mean time to respond (MTTR)
