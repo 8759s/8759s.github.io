@@ -60,12 +60,16 @@ education:
     date_end: 2025-08-31
     summary: |
       Thesis _On the Security and Privacy of Web Requests_. Supervised by [Prof David Lie](https://security.csl.toronto.edu/). Presented papers at conferences such as NDSS and DSN and journals such as CSUR.
+    # button:
+    #   text: 'Read Thesis'
+    #   url: 'https://example.com'
   - area: MASc 
     institution: University of Toronto
     date_start: 2017-09-01
     date_end: 2019-12-31
     summary: |
       Thesis _Using Context to Verify Human Intent_. Supervised by [Prof David Lie](https://security.csl.toronto.edu/). Presented at ApSys 2019. 
+      
   - area: BSc
     institution: University of Toronto
     date_start: 2011-09-01
@@ -81,7 +85,7 @@ work:
     company_logo: ''
     date_start: 2024-08-01
     date_end: ''
-    summary: |
+    summary: |2-
       Responsibilities include:
       - Develop machine learning models to detect web attacks
   - position: Researcher
@@ -198,4 +202,6 @@ work:
 
 ## He (Shawn) Shuang
 
-I am a PhD candidate in Computer Engineering at the University of Toronto. My research interest is on improving security and privacy in the web, system and applications through use of machine learning and large language models. Currently seeking full-time opportunities in Summer/Fall 2025.
+I'm a security researcher at Palo Alto Networks in the Bay Area, specializing in web security. My work focuses on detecting threats like phishing, malicious JavaScript, and browser plugins, as well as greyware. 
+
+I hold a Ph.D. in Computer Engineering from the University of Toronto, where my research explored leveraging machine learning to enhance security and privacy across the web, systems, and applications. I also completed my Master's and Bachelor's degrees at the same university.
