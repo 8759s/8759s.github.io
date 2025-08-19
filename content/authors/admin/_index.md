@@ -53,30 +53,6 @@ interests:
   - Software security
   - Machine learning and large language models
 
-education:
-  - area: PhD 
-    institution: University of Toronto
-    date_start: 2020-01-01
-    date_end: 2025-08-31
-    summary: |
-      Thesis _On the Security and Privacy of Web Requests_. Supervised by [Prof David Lie](https://security.csl.toronto.edu/). Presented papers at conferences such as NDSS and DSN and journals such as CSUR.
-    # button:
-    #   text: 'Read Thesis'
-    #   url: 'https://example.com'
-  - area: MASc 
-    institution: University of Toronto
-    date_start: 2017-09-01
-    date_end: 2019-12-31
-    summary: |
-      Thesis _Using Context to Verify Human Intent_. Supervised by [Prof David Lie](https://security.csl.toronto.edu/). Presented at ApSys 2019. 
-      
-  - area: BSc
-    institution: University of Toronto
-    date_start: 2011-09-01
-    date_end: 2016-08-31
-    summary: |
-      High distinction, with a focus on Web and Internet Technologies
-      
       
 work:
   - position: Senior Staff Researcher
@@ -85,7 +61,7 @@ work:
     company_logo: ''
     date_start: 2024-08-01
     date_end: ''
-    summary: |2-
+    summary: |
       Responsibilities include:
       - Develop machine learning models to detect web attacks
   - position: Researcher
@@ -126,6 +102,32 @@ work:
       Responsibilities include:
       - Full stack application development 
 
+
+education:
+  - area: PhD 
+    institution: University of Toronto
+    date_start: 2020-01-01
+    date_end: 2025-08-31
+    summary: |
+      Thesis _On the Security and Privacy of Web Requests_. Supervised by [Prof David Lie](https://security.csl.toronto.edu/). Presented papers at conferences such as NDSS and DSN and journals such as CSUR.
+    # button:
+    #   text: 'Read Thesis'
+    #   url: 'https://example.com'
+  - area: MASc 
+    institution: University of Toronto
+    date_start: 2017-09-01
+    date_end: 2019-12-31
+    summary: |
+      Thesis _Using Context to Verify Human Intent_. Supervised by [Prof David Lie](https://security.csl.toronto.edu/). Presented at ApSys 2019. 
+      
+  - area: BSc
+    institution: University of Toronto
+    date_start: 2011-09-01
+    date_end: 2016-08-31
+    summary: |
+      High distinction, with a focus on Web and Internet Technologies
+      
+      
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
 # skills:
@@ -202,6 +204,4 @@ work:
 
 ## He (Shawn) Shuang
 
-I'm a security researcher at Palo Alto Networks in the Bay Area, specializing in web security. My work focuses on detecting threats like phishing, malicious JavaScript, and browser plugins and greyware.
-
-I hold a Ph.D. in Computer Engineering from the University of Toronto advised by Prof David Lie. My research explored leveraging machine learning to enhance security and privacy across the web, systems, and applications. I also completed my Master's and Bachelor's degrees at the same university.
+I am a PhD candidate in Computer Engineering at the University of Toronto. My research interest is on improving security and privacy in the web, system and applications through use of machine learning and large language models. Currently seeking full-time opportunities in Summer/Fall 2025.
