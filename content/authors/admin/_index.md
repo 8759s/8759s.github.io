@@ -203,5 +203,5 @@ work:
 ## He (Shawn) Shuang
 
 I'm a security researcher at Palo Alto Networks in the Bay Area, specializing in web security. My work focuses on detecting threats like phishing, malicious JavaScript, and browser plugins and greyware.
-
+ 
 I hold a Ph.D. in Computer Engineering from the University of Toronto advised by Prof David Lie. My research explored leveraging machine learning to enhance security and privacy across the web, systems, and applications. I also completed my Master's and Bachelor's degrees at the same university.
