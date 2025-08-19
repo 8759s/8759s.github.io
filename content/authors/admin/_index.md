@@ -23,9 +23,9 @@ highlight_name: true
 role: Researcher
 
 # Organizations/Affiliations to display in Biography blox
-# organizations:
-#   - name: Palo Alto Networks
-#     url: https://www.paloaltonetworks.com/network-security
+organizations:
+  - name: Palo Alto Networks
+    url: https://www.paloaltonetworks.com/network-security
 
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
@@ -85,7 +85,7 @@ work:
     company_logo: ''
     date_start: 2024-08-01
     date_end: ''
-    summary: |2-
+    summary: |
       Responsibilities include:
       - Develop machine learning models to detect web attacks
   - position: Researcher
@@ -93,7 +93,7 @@ work:
     company_url: ''
     company_logo: ''
     date_start: 2024-05-01
-    date_end: ''
+    date_end: 2025-05-01
     summary: |2-
       Responsibilities include:
       - Large language model (LLM)-based vulnerability early detection framework reducing vulnerability acknowledge time 
@@ -103,7 +103,7 @@ work:
     company_url: ''
     company_logo: ''
     date_start: 2020-01-01
-    date_end: 2024-12-31
+    date_end: ''
     summary: |
       Responsibilities include:
       - Statistical analysis in R
