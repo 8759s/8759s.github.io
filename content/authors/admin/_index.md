@@ -20,11 +20,12 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Researcher
+role: PhD Candidate
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: Palo Alto Networks
+  - name: University of Toronto
+    url: https://www.ece.utoronto.ca/
 
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
