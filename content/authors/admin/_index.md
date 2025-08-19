@@ -60,16 +60,12 @@ education:
     date_end: 2025-08-31
     summary: |
       Thesis _On the Security and Privacy of Web Requests_. Supervised by [Prof David Lie](https://security.csl.toronto.edu/). Presented papers at conferences such as NDSS and DSN and journals such as CSUR.
-    # button:
-    #   text: 'Read Thesis'
-    #   url: 'https://example.com'
   - area: MASc 
     institution: University of Toronto
     date_start: 2017-09-01
     date_end: 2019-12-31
     summary: |
       Thesis _Using Context to Verify Human Intent_. Supervised by [Prof David Lie](https://security.csl.toronto.edu/). Presented at ApSys 2019. 
-      
   - area: BSc
     institution: University of Toronto
     date_start: 2011-09-01
@@ -79,13 +75,22 @@ education:
       
       
 work:
+  - position: Senior Staff Researcher
+    company_name: Palo Alto Networks
+    company_url: ''
+    company_logo: ''
+    date_start: 2024-08-01
+    date_end: ''
+    summary: |
+      Responsibilities include:
+      - Develop machine learning models to detect web attacks
   - position: Researcher
     company_name: Huawei Research Canada
     company_url: ''
     company_logo: ''
     date_start: 2024-05-01
-    date_end: ''
-    summary: |2-
+    date_end: 2025-05-01
+    summary: |
       Responsibilities include:
       - Large language model (LLM)-based vulnerability early detection framework reducing vulnerability acknowledge time 
       - LLM-based vulnerability automatic patcher reducing mean time to respond (MTTR)
