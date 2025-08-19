@@ -20,12 +20,12 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: PhD Candidate
+role: Researcher
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: University of Toronto
-    url: https://www.ece.utoronto.ca/
+  - name: Palo Alto Networks
+    url: https://www.paloaltonetworks.com/network-security
 
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
@@ -202,6 +202,6 @@ work:
 
 ## He (Shawn) Shuang
 
-I'm a security researcher at Palo Alto Networks in the Bay Area, specializing in web security. My work focuses on detecting threats like phishing, malicious JavaScript, and browser plugins, as well as greyware. 
+I'm a security researcher at Palo Alto Networks in the Bay Area, specializing in web security. My work focuses on detecting threats like phishing, malicious JavaScript, and browser plugins and greyware working with [Dr Alex Starov](https://www.cyberphilosopher.org/).
 
-I hold a Ph.D. in Computer Engineering from the University of Toronto, where my research explored leveraging machine learning to enhance security and privacy across the web, systems, and applications. I also completed my Master's and Bachelor's degrees at the same university.
+I hold a Ph.D. in Computer Engineering from the University of Toronto, advised by [Prof David Lie](https://security.csl.toronto.edu/), where my research explored leveraging machine learning to enhance security and privacy across the web, systems, and applications. I also completed my Master's and Bachelor's degrees at the same university.
