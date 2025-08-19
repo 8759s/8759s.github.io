@@ -20,12 +20,12 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: PhD Candidate
+role: Researcher
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: University of Toronto
-    url: https://www.ece.utoronto.ca/
+  - name: Palo Alto Networks
+    url: https://www.paloaltonetworks.com/network-security
 
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
@@ -80,11 +80,20 @@ education:
       
 work:
   - position: Researcher
+    company_name: Palo Alto Networks
+    company_url: ''
+    company_logo: ''
+    date_start: 2024-08-01
+    date_end: ''
+    summary: |
+      Responsibilities include:
+      - Develop machine learning models to detect web attacks
+  - position: Researcher
     company_name: Huawei Research Canada
     company_url: ''
     company_logo: ''
     date_start: 2024-05-01
-    date_end: ''
+    date_end: 2025-05-01
     summary: |
       Responsibilities include:
       - Large language model (LLM)-based vulnerability early detection framework reducing vulnerability acknowledge time 
@@ -94,7 +103,7 @@ work:
     company_url: ''
     company_logo: ''
     date_start: 2020-01-01
-    date_end: 2024-12-31
+    date_end: ''
     summary: |
       Responsibilities include:
       - Statistical analysis in R
@@ -193,4 +202,6 @@ work:
 
 ## He (Shawn) Shuang
 
-I am a PhD candidate in Computer Engineering at the University of Toronto. My research interest is on improving security and privacy in the web, system and applications through use of machine learning and large language models. Currently seeking full-time opportunities in Summer/Fall 2025.
+I'm a security researcher at Palo Alto Networks in the Bay Area, specializing in web security. My work focuses on detecting threats like phishing, malicious JavaScript, and browser plugins and greyware. 
+
+I hold a Ph.D. in Computer Engineering from the University of Toronto, where my research explored leveraging machine learning to enhance security and privacy across the web, systems, and applications. I also completed my Master's and Bachelor's degrees at the same university.
