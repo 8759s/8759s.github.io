@@ -80,6 +80,15 @@ education:
       
 work:
   - position: Researcher
+    company_name: Palo Alto Networks
+    company_url: ''
+    company_logo: ''
+    date_start: 2024-08-01
+    date_end: ''
+    summary: |2-
+      Responsibilities include:
+      - Develop machine learning models to detect web attacks
+  - position: Researcher
     company_name: Huawei Research Canada
     company_url: ''
     company_logo: ''
@@ -193,4 +202,6 @@ work:
 
 ## He (Shawn) Shuang
 
-I'm a security researcher in the Bay Area, specializing in web security. My work focuses on detecting threats like phishing, malicious JavaScript, and browser plugins, as well as greyware. I hold a Ph.D. in Computer Engineering from the University of Toronto, where my research explored leveraging machine learning to enhance security and privacy across the web, systems, and applications. I also completed my Master's and Bachelor's degrees at the same university.
+I'm a security researcher at Palo Alto Networks in the Bay Area, specializing in web security. My work focuses on detecting threats like phishing, malicious JavaScript, and browser plugins, as well as greyware. 
+
+I hold a Ph.D. in Computer Engineering from the University of Toronto, where my research explored leveraging machine learning to enhance security and privacy across the web, systems, and applications. I also completed my Master's and Bachelor's degrees at the same university.
