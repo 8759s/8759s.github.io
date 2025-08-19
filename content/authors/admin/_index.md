@@ -85,7 +85,7 @@ work:
     company_logo: ''
     date_start: 2024-05-01
     date_end: ''
-    summary: |2-
+    summary: |
       Responsibilities include:
       - Large language model (LLM)-based vulnerability early detection framework reducing vulnerability acknowledge time 
       - LLM-based vulnerability automatic patcher reducing mean time to respond (MTTR)
