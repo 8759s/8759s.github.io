@@ -50,7 +50,7 @@ profiles:
     label: Resume
   
 interests:
-  - Software security
+  - Web security, application security
   - Machine learning and large language models
 
 education:
@@ -79,7 +79,7 @@ education:
       
       
 work:
-  - position: Researcher
+  - position: Senior Staff Researcher
     company_name: Palo Alto Networks
     company_url: ''
     company_logo: ''
@@ -200,6 +200,6 @@ work:
 #       Object-oriented programming (OOP) lets you specify relationships between functions and the objects that they can act on, helping you manage complexity in your code. This is an intermediate level course, providing an introduction to OOP, using the S3 and R6 systems. S3 is a great day-to-day R programming tool that simplifies some of the functions that you write. R6 is especially useful for industry-specific analyses, working with web APIs, and building GUIs.
 ---
 
-I'm a security researcher at Palo Alto Networks in the Bay Area, specializing in web security. My work focuses on detecting threats like phishing, malicious JavaScript, and browser plugins and greyware. 
+I'm a security researcher at Palo Alto Networks in the Bay Area, specializing in web security. My work focuses on detecting threats like phishing, malicious JavaScript, browser plugins and greyware working with [Dr Alex Starov](https://www.cyberphilosopher.org/).
 
-I hold a Ph.D. in Computer Engineering from the University of Toronto, where my research explored leveraging machine learning to enhance security and privacy across the web, systems, and applications. I also completed my Master's and Bachelor's degrees at the same university.
+I hold a Ph.D. in Computer Engineering from the University of Toronto advised by [Prof David Lie](https://security.csl.toronto.edu/). My research explored leveraging machine learning to enhance the security and privacy of web requests. I also completed my Master's and Bachelor's degrees at the same university.
