@@ -1,6 +1,6 @@
 ---
 # Display name
-title: He Shuang
+title: He (Shawn) Shuang
 
 # Name pronunciation (optional)
 name_pronunciation: 
@@ -20,7 +20,7 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Researcher
+role: Web Security Researcher
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
@@ -30,21 +30,18 @@ organizations:
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
-  - icon: at-symbol
-    url: 'mailto:8759shuang@gmail.com'
-    label: E-mail Me
   - icon: brands/linkedin
     url: https://www.linkedin.com/in/shawn-shuang/
     label: Linkedin
   - icon: academicons/google-scholar
     url: https://scholar.google.com/citations?user=t3k6t68AAAAJ&hl=en
     label: Google Scholar
-  - icon: academicons/cv
-    url: https://8759s.github.io/uploads/shawn_cv.pdf
-    label: CV
-  - icon: devicon/readthedocs
-    url: https://8759s.github.io/uploads/shawn_resume.pdf
-    label: Resume
+  # - icon: academicons/cv
+  #   url: https://8759s.github.io/uploads/shawn_cv.pdf
+  #   label: CV
+  # - icon: devicon/readthedocs
+  #   url: https://8759s.github.io/uploads/shawn_resume.pdf
+  #   label: Resume
   
 interests:
   - Web security, application security

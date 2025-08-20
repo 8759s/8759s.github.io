@@ -15,9 +15,9 @@ sections:
       username: admin
       text: ""
       # Show a call-to-action button under your biography? (optional)
-      button:
-        text: CV
-        url: https://8759s.github.io/uploads/shawn_cv.pdf
+      # button:
+      #   text: CV
+      #   url: https://8759s.github.io/uploads/shawn_cv.pdf
       
   #   design:
   #     columns: '2'
@@ -25,7 +25,7 @@ sections:
     content:
       title: 'My Research'
       subtitle: ''
-      text: |-
+      text: |
         #### Web Security
         Web security is a dynamic and evolving research area, where malicious actors continuously develop new methods to extract or exchange undesirable information from  clients, while detectors strive to identify such activities. This constant struggle represents an arms race. Reliable detection mechanisms benefit from the development of creative client-side tools that gather contextual information about web requests to identify undesirable information exchanges. My research projects, vWitness and Duumviri, exemplify this approach by using contextual data to detect and block undesirable activities. For instance, vWitness leverages user-provided inputs extracted from a series of screenshots leading to the generation of a request to uncover user-impersonating requests, while Duumviri the consequential effect of blocking a request to identify trackers. However, these are just the beginning --- there remains significant potential for further exploration into advanced contextual information, including browser state dynamics, fine-grained user interaction data, and even AI-powered behavioral models, to enhance web security.
 
