@@ -33,9 +33,6 @@ profiles:
   - icon: at-symbol
     url: 'mailto:8759shuang@gmail.com'
     label: E-mail Me
-  - icon: brands/github
-    url: https://github.com/8759s
-    label: GitHub
   - icon: brands/linkedin
     url: https://www.linkedin.com/in/shawn-shuang/
     label: Linkedin
@@ -53,30 +50,7 @@ interests:
   - Web security, application security
   - Machine learning and large language models
 
-education:
-  - area: PhD 
-    institution: University of Toronto
-    date_start: 2020-01-01
-    date_end: 2025-08-31
-    summary: |
-      Thesis _On the Security and Privacy of Web Requests_. Supervised by [Prof David Lie](https://security.csl.toronto.edu/). Presented papers at conferences such as NDSS and DSN and journals such as CSUR.
-    # button:
-    #   text: 'Read Thesis'
-    #   url: 'https://example.com'
-  - area: MASc 
-    institution: University of Toronto
-    date_start: 2017-09-01
-    date_end: 2019-12-31
-    summary: |
-      Thesis _Using Context to Verify Human Intent_. Supervised by [Prof David Lie](https://security.csl.toronto.edu/). Presented at ApSys 2019. 
-      
-  - area: BSc
-    institution: University of Toronto
-    date_start: 2011-09-01
-    date_end: 2016-08-31
-    summary: |
-      High distinction, with a focus on Web and Internet Technologies
-      
+
       
 work:
   - position: Senior Staff Researcher
@@ -125,6 +99,31 @@ work:
     summary: |
       Responsibilities include:
       - Full stack application development 
+
+education:
+  - area: Doctor of Philosophy 
+    institution: University of Toronto
+    date_start: 2020-01-01
+    date_end: 2025-08-31
+    summary: |
+      Thesis _On the Security and Privacy of Web Requests_. Supervised by [Prof David Lie](https://security.csl.toronto.edu/). Presented papers at conferences such as NDSS and DSN and journals such as CSUR.
+    # button:
+    #   text: 'Read Thesis'
+    #   url: 'https://example.com'
+  - area: Master of Applied Science 
+    institution: University of Toronto
+    date_start: 2017-09-01
+    date_end: 2019-12-31
+    summary: |
+      Thesis _Using Context to Verify Human Intent_. Supervised by [Prof David Lie](https://security.csl.toronto.edu/). Presented at ApSys 2019. 
+      
+  - area: Bachelor of Science
+    institution: University of Toronto
+    date_start: 2011-09-01
+    date_end: 2016-08-31
+    summary: |
+      High distinction, with a focus on Web and Internet Technologies
+      
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
