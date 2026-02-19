@@ -2,6 +2,7 @@
 title: 'Experience'
 date: 2023-10-24
 type: landing
+description: "Researcher at Palo Alto Networks. PhD in Computer Engineering from University of Toronto. Experience in web security, vulnerability detection, and machine learning."
 
 design:
   spacing: '5rem'

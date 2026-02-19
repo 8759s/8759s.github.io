@@ -2,6 +2,7 @@
 title: 'Projects'
 date: 2024-05-19
 type: landing
+description: "Research projects in web security including vWitness (visual request verification) and Duumviri (tracker detection using breakage analysis)."
 
 design:
   # Section spacing
