@@ -3,6 +3,7 @@
 title: ""
 date: 2022-10-24
 type: landing
+description: "Web security researcher at Palo Alto Networks. PhD from University of Toronto. Research in phishing detection, browser security, and AI-powered vulnerability management."
 
 design:
   # Default section spacing

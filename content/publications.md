@@ -2,6 +2,7 @@
 title: ""
 date: 2022-10-24
 type: landing
+description: "Publications in web security, vulnerability detection, and trusted execution. Papers from NDSS, DSN, ACM CSUR, and other security conferences."
 
 sections:
   - block: markdown
