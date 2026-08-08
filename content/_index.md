@@ -19,28 +19,23 @@ sections:
       # button:
       #   text: CV
       #   url: https://8759s.github.io/uploads/shawn_cv.pdf
-      
-  #   design:
-  #     columns: '2'
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-
-       
-    # design:
-    #   columns: '1'
+  - block: collection
+    id: news
+    content:
+      title: News
+      count: 3
+      filters:
+        folders:
+          - research-posts
+      order: desc
+      archive:
+        enable: true
+        link: news/
+        text: View all news
+    design:
+      view: date-title-summary
+      columns: 1
   # - block: collection
   #   id: papers
   #   content:

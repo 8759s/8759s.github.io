@@ -43,9 +43,7 @@ profiles:
   #   url: https://8759s.github.io/uploads/shawn_resume.pdf
   #   label: Resume
   
-interests:
-  - Web security, application security
-  - Machine learning and large language models
+interests: []
 
 
       
@@ -97,30 +95,7 @@ work:
       Responsibilities include:
       - Full stack application development 
 
-education:
-  - area: Doctor of Philosophy 
-    institution: University of Toronto
-    date_start: 2020-01-01
-    date_end: 2025-08-31
-    summary: |
-      Thesis _On the Security and Privacy of Web Requests_. Supervised by [Prof David Lie](https://security.csl.toronto.edu/). Presented papers at conferences such as NDSS and DSN and journals such as CSUR.
-    # button:
-    #   text: 'Read Thesis'
-    #   url: 'https://example.com'
-  - area: Master of Applied Science 
-    institution: University of Toronto
-    date_start: 2017-09-01
-    date_end: 2019-12-31
-    summary: |
-      Thesis _Using Context to Verify Human Intent_. Supervised by [Prof David Lie](https://security.csl.toronto.edu/). Presented at ApSys 2019. 
-      
-  - area: Bachelor of Science
-    institution: University of Toronto
-    date_start: 2011-09-01
-    date_end: 2016-08-31
-    summary: |
-      High distinction, with a focus on Web and Internet Technologies
-      
+education: []
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
@@ -198,4 +173,4 @@ education:
 
 I am a web security researcher at [Palo Alto Networks](https://www.paloaltonetworks.com/network-security) in the San Francisco Bay Area, where I develop machine learning models to detect and prevent web attacks, including advanced phishing pages and runtime assembly attacks. Previously, I was a researcher at [Huawei Research Canada](https://www.huawei.com/ca/), where I focused on supply chain security and vulnerability detection using agentic approaches.
 
-I hold a Ph.D. in Computer Engineering from the [University of Toronto](https://www.utoronto.ca/), advised by [Prof David Lie](https://security.csl.toronto.edu/) and [Prof Lianying Zhao](https://people.scs.carleton.ca/~lianyingzhao/). My doctoral research explored machine learning approaches to improve the security and privacy of web requests. I completed my Master of Applied Science under [Prof David Lie](https://security.csl.toronto.edu/) and my Bachelor at the [University of Toronto](https://www.utoronto.ca/). 
+I hold a Ph.D. in Computer Engineering from the [University of Toronto](https://www.utoronto.ca/), advised by [Prof David Lie](https://security.csl.toronto.edu/) and [Prof Lianying Zhao](https://people.scs.carleton.ca/~lianyingzhao/). My doctoral research explored machine learning approaches to improve the security and privacy of web requests. I completed my Master of Applied Science under [Prof David Lie](https://security.csl.toronto.edu/) and my Bachelor at the [University of Toronto](https://www.utoronto.ca/).

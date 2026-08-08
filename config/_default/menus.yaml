@@ -5,11 +5,14 @@
 
 main:
   - name: Home
-    url: /
+    pageRef: /
     weight: 10
   - name: Publications
-    url: publications/
-    weight: 11
+    pageRef: /publications
+    weight: 20
+  - name: News
+    pageRef: /research-posts
+    weight: 30
   # - name: Experience
   #   url: experience/
   #   weight: 12
