@@ -22,16 +22,7 @@
 .blox-fun-gallery {
   min-height: calc(100vh - 8rem);
   overflow: hidden;
-  background:
-    radial-gradient(circle at 10% 5%, rgba(116, 214, 180, 0.23), transparent 28rem),
-    radial-gradient(circle at 92% 12%, rgba(173, 137, 223, 0.18), transparent 25rem),
-    linear-gradient(180deg, rgba(244, 252, 249, 0.82), rgba(255, 255, 255, 0));
-}
-
-.dark .blox-fun-gallery {
-  background:
-    radial-gradient(circle at 10% 5%, rgba(47, 133, 108, 0.2), transparent 28rem),
-    radial-gradient(circle at 92% 12%, rgba(112, 79, 154, 0.16), transparent 25rem);
+  background: transparent;
 }
 
 .fun-intro {
@@ -90,9 +81,14 @@
 
 .fun-photo-wrap {
   position: relative;
-  aspect-ratio: 3 / 4;
   overflow: hidden;
   background: #dce8e4;
+}
+
+.fun-photo-stage {
+  position: relative;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
 }
 
 .fun-photo {
@@ -104,6 +100,57 @@
 
 .fun-card:hover .fun-photo {
   transform: scale(1.025);
+}
+
+.fun-photo[hidden] { display: none; }
+
+.fun-photo-count {
+  position: absolute;
+  right: 0.85rem;
+  bottom: 0.85rem;
+  padding: 0.32rem 0.62rem;
+  border-radius: 999px;
+  background: rgba(10, 37, 32, 0.78);
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 750;
+  backdrop-filter: blur(8px);
+}
+
+.fun-thumbnails {
+  display: flex;
+  gap: 0.5rem;
+  overflow-x: auto;
+  padding: 0.65rem 0.75rem 0;
+  scrollbar-width: thin;
+}
+
+.fun-thumbnail {
+  flex: 0 0 3.2rem;
+  width: 3.2rem;
+  height: 3.2rem;
+  overflow: hidden;
+  padding: 0;
+  border: 2px solid transparent;
+  border-radius: 0.65rem;
+  background: transparent;
+  cursor: pointer;
+}
+
+.fun-thumbnail[aria-pressed="true"] {
+  border-color: var(--fun-accent);
+  box-shadow: 0 0 0 2px var(--fun-card);
+}
+
+.fun-thumbnail:focus-visible {
+  outline: 3px solid #f2b84b;
+  outline-offset: 2px;
+}
+
+.fun-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .fun-kind {

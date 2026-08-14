@@ -1,6 +1,6 @@
 {{/* A generated, accessible gemstone and fossil gallery. */}}
 {{ $block := .wcBlock }}
-{{ $items := site.Data.fun.items }}
+{{ $items := hugo.Data.fun.groups }}
 
 <link rel="stylesheet" href="{{ "css/fun-gallery.css" | relURL }}">
 
@@ -17,18 +17,38 @@
         {{ if eq .status "published" }}
           <article class="fun-card" role="listitem">
             <div class="fun-photo-wrap">
-              <img
-                class="fun-photo"
-                src="{{ .images.medium | relURL }}"
-                srcset="{{ .images.small | relURL }} 480w, {{ .images.medium | relURL }} 960w, {{ .images.large | relURL }} 1600w"
-                sizes="(max-width: 680px) 92vw, (max-width: 1100px) 44vw, 31vw"
-                width="{{ .width }}"
-                height="{{ .height }}"
-                loading="lazy"
-                decoding="async"
-                alt="{{ .alt_text }}">
+              <div class="fun-photo-stage">
+                {{ $groupName := .name }}
+                {{ range $photoIndex, $photo := .photos }}
+                  <img
+                    class="fun-photo"
+                    data-photo-index="{{ $photoIndex }}"
+                    src="{{ $photo.images.medium | relURL }}"
+                    srcset="{{ $photo.images.small | relURL }} 480w, {{ $photo.images.medium | relURL }} 960w, {{ $photo.images.large | relURL }} 1600w"
+                    sizes="(max-width: 680px) 92vw, (max-width: 1100px) 44vw, 31vw"
+                    width="{{ $photo.width }}"
+                    height="{{ $photo.height }}"
+                    loading="lazy"
+                    decoding="async"
+                    alt="{{ $photo.alt_text }}"
+                    {{ if ne $photoIndex 0 }}hidden{{ end }}>
+                {{ end }}
+              </div>
               <span class="fun-kind fun-kind-{{ .category | urlize }}">{{ .category }}</span>
+              {{ if gt .photo_count 1 }}
+                <span class="fun-photo-count">{{ .photo_count }} photos</span>
+              {{ end }}
             </div>
+
+            {{ if gt .photo_count 1 }}
+              <div class="fun-thumbnails" role="group" aria-label="Choose a photo of {{ .name }}">
+                {{ range $photoIndex, $photo := .photos }}
+                  <button class="fun-thumbnail" type="button" data-photo-index="{{ $photoIndex }}" aria-label="Show photo {{ add $photoIndex 1 }} of {{ $groupName }}" aria-pressed="{{ if eq $photoIndex 0 }}true{{ else }}false{{ end }}">
+                    <img src="{{ $photo.images.small | relURL }}" alt="" loading="lazy">
+                  </button>
+                {{ end }}
+              </div>
+            {{ end }}
 
             <div class="fun-card-body">
               <div class="fun-title-row">

@@ -14,6 +14,7 @@ import json
 import os
 import sys
 import tempfile
+import time
 from pathlib import Path
 from typing import Literal
 
@@ -24,6 +25,7 @@ from pydantic import BaseModel, Field
 ROOT = Path(__file__).resolve().parents[1]
 INBOX = ROOT / "fun_photos"
 DATA_FILE = ROOT / "data" / "fun" / "items.json"
+GROUPS_FILE = ROOT / "data" / "fun" / "groups.json"
 OVERRIDES_FILE = ROOT / "data" / "fun" / "overrides.json"
 IMAGE_DIR = ROOT / "static" / "fun" / "images"
 SUPPORTED_SUFFIXES = {".jpg", ".jpeg", ".png", ".webp", ".tif", ".tiff"}
@@ -154,7 +156,7 @@ def create_variants(image: Image.Image, item_id: str) -> tuple[dict[str, str], i
     return paths, large_size[0], large_size[1]
 
 
-def analyze(image_path: Path, model: str) -> SpecimenAnalysis:
+def analyze(image_path: Path, model: str, known_names: list[str]) -> SpecimenAnalysis:
     api_key = os.environ.get("GEMINI_API_KEY")
     if not api_key:
         raise RuntimeError(
@@ -162,24 +164,48 @@ def analyze(image_path: Path, model: str) -> SpecimenAnalysis:
         )
 
     from google import genai
-    from google.genai import types
+    from google.genai import errors, types
 
     client = genai.Client(api_key=api_key)
-    response = client.models.generate_content(
-        model=model,
-        contents=[
-            PROMPT,
-            types.Part.from_bytes(data=image_path.read_bytes(), mime_type="image/webp"),
-        ],
-        config=types.GenerateContentConfig(
-            response_mime_type="application/json",
-            response_json_schema=SpecimenAnalysis.model_json_schema(),
-            max_output_tokens=2000,
-            thinking_config=types.ThinkingConfig(
-                thinking_level=types.ThinkingLevel.MINIMAL,
-            ),
-        ),
-    )
+    naming_context = ""
+    if known_names:
+        naming_context = (
+            "\n\nNames already used in this collection: "
+            + ", ".join(sorted(known_names, key=str.casefold))
+            + ". If this is the same material or specimen type as one of them, "
+            "reuse that exact name so its photos can share one description. Keep "
+            "visibly distinct varieties, such as rose quartz and clear quartz, separate."
+        )
+
+    for attempt in range(3):
+        try:
+            response = client.models.generate_content(
+                model=model,
+                contents=[
+                    PROMPT + naming_context,
+                    types.Part.from_bytes(data=image_path.read_bytes(), mime_type="image/webp"),
+                ],
+                config=types.GenerateContentConfig(
+                    response_mime_type="application/json",
+                    response_json_schema=SpecimenAnalysis.model_json_schema(),
+                    max_output_tokens=2000,
+                    thinking_config=types.ThinkingConfig(
+                        thinking_level=types.ThinkingLevel.MINIMAL,
+                    ),
+                ),
+            )
+            break
+        except errors.APIError as error:
+            retryable = error.code in {429, 500, 502, 503, 504}
+            if not retryable or attempt == 2:
+                raise
+            delay = 15 * (attempt + 1)
+            print(
+                f"  Gemini temporarily unavailable ({error.code}); "
+                f"retrying in {delay} seconds...",
+                flush=True,
+            )
+            time.sleep(delay)
     if not response.text:
         raise RuntimeError("Gemini returned no text.")
     return SpecimenAnalysis.model_validate_json(response.text)
@@ -194,12 +220,54 @@ def apply_overrides(item: dict, overrides: dict) -> dict:
         "confidence",
         "uncertainty_note",
         "status",
+        "group",
     }
     for key, value in overrides.get(item["id"], {}).items():
         if key not in allowed:
             raise ValueError(f"Unsupported override field {key!r} for {item['id']}")
         item[key] = value
     return item
+
+
+def normalized_group_name(item: dict) -> str:
+    value = item.get("group") or item.get("name") or item.get("id", "unknown")
+    normalized = "".join(
+        character.lower() if character.isalnum() else " " for character in value
+    )
+    return " ".join(normalized.split())
+
+
+def build_groups(items: list[dict]) -> list[dict]:
+    """Combine published photos with the same identified type into one card."""
+    groups_by_name: dict[str, dict] = {}
+    for item in items:
+        if item.get("status") != "published":
+            continue
+        key = normalized_group_name(item)
+        photo = {
+            "id": item["id"],
+            "images": item["images"],
+            "width": item["width"],
+            "height": item["height"],
+            "alt_text": item["alt_text"],
+        }
+        if key not in groups_by_name:
+            groups_by_name[key] = {
+                "id": item["id"],
+                "name": item["name"],
+                "category": item["category"],
+                "description": item["description"],
+                "confidence": item["confidence"],
+                "uncertainty_note": item.get("uncertainty_note", ""),
+                "status": "published",
+                "photos": [],
+            }
+        groups_by_name[key]["photos"].append(photo)
+
+    groups = list(groups_by_name.values())
+    for group in groups:
+        group["photo_count"] = len(group["photos"])
+    return groups
 
 
 def validate_items(items: list[dict]) -> list[str]:
@@ -223,6 +291,24 @@ def validate_items(items: list[dict]) -> list[str]:
     return errors
 
 
+def validate_groups(groups: list[dict]) -> list[str]:
+    errors: list[str] = []
+    seen_photos: set[str] = set()
+    for group in groups:
+        group_id = group.get("id", "<missing>")
+        photos = group.get("photos", [])
+        if not photos:
+            errors.append(f"{group_id}: group has no photos")
+        if group.get("photo_count") != len(photos):
+            errors.append(f"{group_id}: incorrect photo count")
+        for photo in photos:
+            photo_id = photo.get("id", "<missing>")
+            if photo_id in seen_photos:
+                errors.append(f"{photo_id}: photo appears in more than one group")
+            seen_photos.add(photo_id)
+    return errors
+
+
 def sync(model: str, dry_run: bool, refresh_ai: bool) -> int:
     files = source_files()
     if not files:
@@ -231,6 +317,7 @@ def sync(model: str, dry_run: bool, refresh_ai: bool) -> int:
 
     items: list[dict] = load_json(DATA_FILE, [])
     overrides: dict = load_json(OVERRIDES_FILE, {})
+    known_names = list(dict.fromkeys(item.get("name", "") for item in items if item.get("name")))
     by_source = {item.get("source_sha256"): item for item in items}
     known_visuals = [
         (item.get("perceptual_hash"), item.get("aspect_ratio"), item)
@@ -274,7 +361,7 @@ def sync(model: str, dry_run: bool, refresh_ai: bool) -> int:
         print(f"Processing {path.name} as {item_id}...")
         image_paths, width, height = create_variants(image, item_id)
         analysis_path = ROOT / "static" / image_paths["medium"]
-        analysis = analyze(analysis_path, model)
+        analysis = analyze(analysis_path, model, known_names)
         raw = analysis.model_dump()
         word_count = len(raw["description"].split())
         if raw["privacy_risk"]:
@@ -305,6 +392,8 @@ def sync(model: str, dry_run: bool, refresh_ai: bool) -> int:
             "prompt_version": PROMPT_VERSION,
         }
         item = apply_overrides(item, overrides)
+        if item["name"] not in known_names:
+            known_names.append(item["name"])
 
         # Replace the same visual when explicitly refreshing; otherwise append.
         items = [existing for existing in items if existing.get("id") != item_id]
@@ -315,8 +404,10 @@ def sync(model: str, dry_run: bool, refresh_ai: bool) -> int:
     # Apply current corrections even when no API work was needed.
     items = [apply_overrides(item, overrides) for item in items]
     atomic_json(DATA_FILE, items)
+    groups = build_groups(items)
+    atomic_json(GROUPS_FILE, groups)
 
-    errors = validate_items(items)
+    errors = validate_items(items) + validate_groups(groups)
     if errors:
         print("Validation failed:", file=sys.stderr)
         for error in errors:
@@ -324,18 +415,22 @@ def sync(model: str, dry_run: bool, refresh_ai: bool) -> int:
         return 1
 
     review = [item for item in items if item.get("needs_review") or item.get("status") != "published"]
-    print(f"Gallery ready: {len(items)} item(s), {len(review)} flagged for review.")
+    print(
+        f"Gallery ready: {len(items)} photo(s) in {len(groups)} type group(s), "
+        f"{len(review)} flagged for review."
+    )
     return 0
 
 
 def validate() -> int:
     items = load_json(DATA_FILE, [])
-    errors = validate_items(items)
+    groups = load_json(GROUPS_FILE, [])
+    errors = validate_items(items) + validate_groups(groups)
     if errors:
         for error in errors:
             print(error, file=sys.stderr)
         return 1
-    print(f"Validated {len(items)} gallery item(s).")
+    print(f"Validated {len(items)} photo(s) in {len(groups)} type group(s).")
     return 0
 
 

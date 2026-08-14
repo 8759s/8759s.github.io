@@ -1,0 +1,185 @@
+[
+  {
+    "id": "16f5c10670e4b2",
+    "name": "Amethyst",
+    "category": "mineral",
+    "description": "Look at this pretty stone! It is likely amethyst, a very popular purple type of quartz. Do you see the white stripes cutting through the purple parts? This creates a beautiful chevron pattern. Amethyst gets its lovely purple color from tiny bits of iron trapped inside the crystal while it was growing deep underground millions of years ago.",
+    "confidence": "medium",
+    "uncertainty_note": "Without a hardness test, it is difficult to distinguish polished amethyst quartz from fluorite, though the chevron pattern strongly suggests amethyst.",
+    "status": "published",
+    "photos": [
+      {
+        "id": "16f5c10670e4b2",
+        "images": {
+          "small": "fun/images/16f5c10670e4b2-small.webp",
+          "medium": "fun/images/16f5c10670e4b2-medium.webp",
+          "large": "fun/images/16f5c10670e4b2-large.webp"
+        },
+        "width": 1200,
+        "height": 1600,
+        "alt_text": "A polished, rounded purple and white stone with V-shaped chevron patterns resting on a dark, wood-textured surface."
+      }
+    ],
+    "photo_count": 1
+  },
+  {
+    "id": "da8d615b45ad6a",
+    "name": "Fluorite",
+    "category": "mineral",
+    "description": "Look closely at this pretty, mint-green stone! This is likely fluorite, a very special mineral. Did you know that some fluorite specimens can actually glow under a blacklight? This cool trick is called fluorescence, and scientists named the glow after this exact mineral! Its smooth, angled surfaces show how it breaks along neat, straight lines.",
+    "confidence": "medium",
+    "uncertainty_note": "Many translucent green minerals, like fluorite, calcite, or aventurine, can look very similar without chemical or physical hardness testing.",
+    "status": "published",
+    "photos": [
+      {
+        "id": "da8d615b45ad6a",
+        "images": {
+          "small": "fun/images/da8d615b45ad6a-small.webp",
+          "medium": "fun/images/da8d615b45ad6a-medium.webp",
+          "large": "fun/images/da8d615b45ad6a-large.webp"
+        },
+        "width": 1015,
+        "height": 1353,
+        "alt_text": "A small, rough chunk of translucent, light green mineral with fractured, glassy surfaces, resting on a dark, textured wood-like background."
+      }
+    ],
+    "photo_count": 1
+  },
+  {
+    "id": "c0f3743b06599a",
+    "name": "Sodalite",
+    "category": "mineral",
+    "description": "Look at this beautiful blue specimen! It looks a lot like a mineral called sodalite, which is famous for its rich royal blue color mixed with white streaks. Sodalite gets its name because it contains a lot of sodium inside it. Artists sometimes carve this tough, colorful stone into pretty beads, jewelry, and small statues.",
+    "confidence": "medium",
+    "uncertainty_note": "Visually, this specimen closely resembles sodalite or lapis lazuli, but definitive identification requires mineralogical testing.",
+    "status": "published",
+    "photos": [
+      {
+        "id": "c0f3743b06599a",
+        "images": {
+          "small": "fun/images/c0f3743b06599a-small.webp",
+          "medium": "fun/images/c0f3743b06599a-medium.webp",
+          "large": "fun/images/c0f3743b06599a-large.webp"
+        },
+        "width": 983,
+        "height": 1311,
+        "alt_text": "A small, rough, triangular piece of blue mineral with white streaks and a crystalline texture, resting on a dark wooden surface."
+      },
+      {
+        "id": "14c575ec8ff02f",
+        "images": {
+          "small": "fun/images/14c575ec8ff02f-small.webp",
+          "medium": "fun/images/14c575ec8ff02f-medium.webp",
+          "large": "fun/images/14c575ec8ff02f-large.webp"
+        },
+        "width": 1200,
+        "height": 1600,
+        "alt_text": "A small, tumbled cubic stone with rounded corners, showing bands of light blue and white with a slightly sugary, crystalline texture, sitting on a dark wooden surface."
+      }
+    ],
+    "photo_count": 2
+  },
+  {
+    "id": "a30d6c4e9795a5",
+    "name": "Snowflake Obsidian",
+    "category": "rock",
+    "description": "Look at this polished stone! It has beautiful white, flowery patches that look just like tiny snowflakes drifting in a dark winter sky. This is actually a special volcanic glass. The frosty white spots are made of a mineral called cristobalite that grew in star-like patterns inside the lava as it cooled down very quickly.",
+    "confidence": "high",
+    "uncertainty_note": "Visually characteristic of snowflake obsidian, though other minerals can occasionally mimic this appearance.",
+    "status": "published",
+    "photos": [
+      {
+        "id": "a30d6c4e9795a5",
+        "images": {
+          "small": "fun/images/a30d6c4e9795a5-small.webp",
+          "medium": "fun/images/a30d6c4e9795a5-medium.webp",
+          "large": "fun/images/a30d6c4e9795a5-large.webp"
+        },
+        "width": 1200,
+        "height": 1600,
+        "alt_text": "A smooth, rounded, triangular-shaped black stone with several distinct white, radial, flower-like or snowflake-patterned patches on its surface, resting on a dark wood grain background."
+      }
+    ],
+    "photo_count": 1
+  },
+  {
+    "id": "28fbd21b6bea74",
+    "name": "Rose Quartz",
+    "category": "mineral",
+    "description": "Look closely at this soft, pale pink mineral! It is called rose quartz. This crystal gets its lovely pastel color from tiny amounts of minerals like titanium or manganese inside it. It did not grow in sharp points. Instead, it grew in a big, solid chunk. Quartz is very tough and can be found all over the Earth!",
+    "confidence": "medium",
+    "uncertainty_note": "Without chemical analysis, pale pink minerals like this can sometimes be confused with calcite or fluorite, though the fracturing highly suggests quartz.",
+    "status": "published",
+    "photos": [
+      {
+        "id": "28fbd21b6bea74",
+        "images": {
+          "small": "fun/images/28fbd21b6bea74-small.webp",
+          "medium": "fun/images/28fbd21b6bea74-medium.webp",
+          "large": "fun/images/28fbd21b6bea74-large.webp"
+        },
+        "width": 1200,
+        "height": 1600,
+        "alt_text": "A rough, pale pink piece of rose quartz with a bumpy, crystalline texture, resting on a dark wood grain background."
+      }
+    ],
+    "photo_count": 1
+  },
+  {
+    "id": "7f59e9c0892bc1",
+    "name": "Quartz",
+    "category": "mineral",
+    "description": "Look closely at this sparkling chunk! It looks like a little piece of ice that will never melt. This is quartz, one of the most common minerals found all over Earth. Quartz is very tough and scratch-resistant. In fact, it is so strong that scientists use it inside watches and computers to help them keep perfect time!",
+    "confidence": "medium",
+    "uncertainty_note": "Without a hardness or chemical test, many colorless minerals like calcite or gypsum can resemble rough quartz.",
+    "status": "published",
+    "photos": [
+      {
+        "id": "7f59e9c0892bc1",
+        "images": {
+          "small": "fun/images/7f59e9c0892bc1-small.webp",
+          "medium": "fun/images/7f59e9c0892bc1-medium.webp",
+          "large": "fun/images/7f59e9c0892bc1-large.webp"
+        },
+        "width": 1200,
+        "height": 1600,
+        "alt_text": "A rough, translucent white and light gray mineral specimen with sparkly, crystalline textures, sitting on a dark wooden surface."
+      },
+      {
+        "id": "cad6753256cade",
+        "images": {
+          "small": "fun/images/cad6753256cade-small.webp",
+          "medium": "fun/images/cad6753256cade-medium.webp",
+          "large": "fun/images/cad6753256cade-large.webp"
+        },
+        "width": 1200,
+        "height": 1600,
+        "alt_text": "A polished, rounded, translucent light-gray and white stone with a single prominent textured, sandy-looking crack cutting across its center, resting on a dark gray wood-grain surface."
+      }
+    ],
+    "photo_count": 2
+  },
+  {
+    "id": "5dc1e3e9cdf631",
+    "name": "Pyrite",
+    "category": "mineral",
+    "description": "Look at how this shiny golden stone sparkles in the light! This mineral is called pyrite, but many people know it by its famous nickname: Fool's Gold. Because it looks so much like real gold, early explorers were often tricked by it. Unlike real gold, pyrite is quite hard and can even create sparks when you strike it against steel.",
+    "confidence": "high",
+    "uncertainty_note": "Visually resembles pyrite, although chalcopyrite is a similar-looking alternative.",
+    "status": "published",
+    "photos": [
+      {
+        "id": "5dc1e3e9cdf631",
+        "images": {
+          "small": "fun/images/5dc1e3e9cdf631-small.webp",
+          "medium": "fun/images/5dc1e3e9cdf631-medium.webp",
+          "large": "fun/images/5dc1e3e9cdf631-large.webp"
+        },
+        "width": 1200,
+        "height": 1600,
+        "alt_text": "A small, rough chunk of metallic, pale brass-yellow mineral with many tiny glittering, blocky crystal faces, resting on a dark wood grain background."
+      }
+    ],
+    "photo_count": 1
+  }
+]

@@ -42,6 +42,34 @@ class FunImageTests(unittest.TestCase):
                 )
             self.assertLessEqual(distance, 2)
 
+    def test_same_named_items_share_one_group_and_description(self):
+        first = {
+            "id": "first",
+            "name": "Quartz",
+            "category": "mineral",
+            "description": "The shared description.",
+            "alt_text": "First view.",
+            "confidence": "high",
+            "uncertainty_note": "",
+            "status": "published",
+            "images": {"small": "a", "medium": "b", "large": "c"},
+            "width": 800,
+            "height": 1000,
+        }
+        second = {
+            **first,
+            "id": "second",
+            "description": "This description should not create another card.",
+            "alt_text": "Second view.",
+        }
+
+        groups = fun_sync.build_groups([first, second])
+
+        self.assertEqual(len(groups), 1)
+        self.assertEqual(groups[0]["description"], "The shared description.")
+        self.assertEqual(groups[0]["photo_count"], 2)
+        self.assertEqual([photo["id"] for photo in groups[0]["photos"]], ["first", "second"])
+
 
 if __name__ == "__main__":
     unittest.main()
