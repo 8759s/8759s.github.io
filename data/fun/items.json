@@ -1,0 +1,80 @@
+[
+  {
+    "id": "16f5c10670e4b2",
+    "name": "Amethyst",
+    "category": "mineral",
+    "description": "Look at this pretty stone! It is likely amethyst, a very popular purple type of quartz. Do you see the white stripes cutting through the purple parts? This creates a beautiful chevron pattern. Amethyst gets its lovely purple color from tiny bits of iron trapped inside the crystal while it was growing deep underground millions of years ago.",
+    "alt_text": "A polished, rounded purple and white stone with V-shaped chevron patterns resting on a dark, wood-textured surface.",
+    "confidence": "medium",
+    "uncertainty_note": "Without a hardness test, it is difficult to distinguish polished amethyst quartz from fluorite, though the chevron pattern strongly suggests amethyst.",
+    "privacy_risk": false,
+    "privacy_note": "",
+    "needs_review": false,
+    "status": "published",
+    "images": {
+      "small": "fun/images/16f5c10670e4b2-small.webp",
+      "medium": "fun/images/16f5c10670e4b2-medium.webp",
+      "large": "fun/images/16f5c10670e4b2-large.webp"
+    },
+    "width": 1200,
+    "height": 1600,
+    "source_sha256": "bd6c88d1791cd29bde0d3d022f8052ede301dcbdd3fe49e300b12d9dcf760445",
+    "perceptual_hash": "118cb2e9f9b2ede8",
+    "aspect_ratio": 0.7499,
+    "metadata_stripped": true,
+    "model": "gemini-3.5-flash",
+    "prompt_version": "2026-08-13.1"
+  },
+  {
+    "id": "da8d615b45ad6a",
+    "name": "Fluorite",
+    "category": "mineral",
+    "description": "Look closely at this pretty, mint-green stone! This is likely fluorite, a very special mineral. Did you know that some fluorite specimens can actually glow under a blacklight? This cool trick is called fluorescence, and scientists named the glow after this exact mineral! Its smooth, angled surfaces show how it breaks along neat, straight lines.",
+    "alt_text": "A small, rough chunk of translucent, light green mineral with fractured, glassy surfaces, resting on a dark, textured wood-like background.",
+    "confidence": "medium",
+    "uncertainty_note": "Many translucent green minerals, like fluorite, calcite, or aventurine, can look very similar without chemical or physical hardness testing.",
+    "privacy_risk": false,
+    "privacy_note": "No privacy risks are visible in this photograph of a mineral specimen on a table.",
+    "needs_review": false,
+    "status": "published",
+    "images": {
+      "small": "fun/images/da8d615b45ad6a-small.webp",
+      "medium": "fun/images/da8d615b45ad6a-medium.webp",
+      "large": "fun/images/da8d615b45ad6a-large.webp"
+    },
+    "width": 1015,
+    "height": 1353,
+    "source_sha256": "bf5d5e2923d54c720198bb591dbbe4bad0074e3d459a49413f447f39db17bb33",
+    "perceptual_hash": "1936e1f9b9ce6ce9",
+    "aspect_ratio": 0.75018,
+    "metadata_stripped": true,
+    "model": "gemini-3.5-flash",
+    "prompt_version": "2026-08-13.1"
+  },
+  {
+    "id": "c0f3743b06599a",
+    "name": "Sodalite",
+    "category": "mineral",
+    "description": "Look at this beautiful blue specimen! It looks a lot like a mineral called sodalite, which is famous for its rich royal blue color mixed with white streaks. Sodalite gets its name because it contains a lot of sodium inside it. Artists sometimes carve this tough, colorful stone into pretty beads, jewelry, and small statues.",
+    "alt_text": "A small, rough, triangular piece of blue mineral with white streaks and a crystalline texture, resting on a dark wooden surface.",
+    "confidence": "medium",
+    "uncertainty_note": "Visually, this specimen closely resembles sodalite or lapis lazuli, but definitive identification requires mineralogical testing.",
+    "privacy_risk": false,
+    "privacy_note": "",
+    "needs_review": false,
+    "status": "published",
+    "images": {
+      "small": "fun/images/c0f3743b06599a-small.webp",
+      "medium": "fun/images/c0f3743b06599a-medium.webp",
+      "large": "fun/images/c0f3743b06599a-large.webp"
+    },
+    "width": 983,
+    "height": 1311,
+    "source_sha256": "d0bb92016d7de11d1f24281fbfdde6e87b9e548008d54495c7e723f592c4765c",
+    "perceptual_hash": "7a304d537230ca9c",
+    "aspect_ratio": 0.74981,
+    "metadata_stripped": true,
+    "model": "gemini-3.5-flash",
+    "prompt_version": "2026-08-13.1"
+  }
+]

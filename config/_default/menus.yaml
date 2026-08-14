@@ -13,6 +13,9 @@ main:
   - name: News
     pageRef: /research-posts
     weight: 30
+  - name: Fun
+    pageRef: /fun
+    weight: 40
   # - name: Experience
   #   url: experience/
   #   weight: 12

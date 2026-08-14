@@ -1,0 +1,66 @@
+{{/* A generated, accessible gemstone and fossil gallery. */}}
+{{ $block := .wcBlock }}
+{{ $items := site.Data.fun.items }}
+
+<link rel="stylesheet" href="{{ "css/fun-gallery.css" | relURL }}">
+
+<div class="fun-shell">
+  <header class="fun-intro">
+    <p class="fun-eyebrow">A pocket-sized museum</p>
+    <h1>{{ $block.content.title }}</h1>
+    <p>{{ $block.content.subtitle }}</p>
+  </header>
+
+  {{ if $items }}
+    <div class="fun-grid" role="list">
+      {{ range $items }}
+        {{ if eq .status "published" }}
+          <article class="fun-card" role="listitem">
+            <div class="fun-photo-wrap">
+              <img
+                class="fun-photo"
+                src="{{ .images.medium | relURL }}"
+                srcset="{{ .images.small | relURL }} 480w, {{ .images.medium | relURL }} 960w, {{ .images.large | relURL }} 1600w"
+                sizes="(max-width: 680px) 92vw, (max-width: 1100px) 44vw, 31vw"
+                width="{{ .width }}"
+                height="{{ .height }}"
+                loading="lazy"
+                decoding="async"
+                alt="{{ .alt_text }}">
+              <span class="fun-kind fun-kind-{{ .category | urlize }}">{{ .category }}</span>
+            </div>
+
+            <div class="fun-card-body">
+              <div class="fun-title-row">
+                <h2>{{ .name }}</h2>
+                <button class="fun-play" type="button" aria-pressed="false" aria-label="Play the description of {{ .name }}">
+                  <svg class="fun-play-icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M8 5.5v13l10-6.5z"></path>
+                  </svg>
+                  <svg class="fun-stop-icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M7 7h10v10H7z"></path>
+                  </svg>
+                  <span>Listen</span>
+                </button>
+              </div>
+
+              <p class="fun-description">{{ .description }}</p>
+              {{ with .uncertainty_note }}
+                <p class="fun-note"><span aria-hidden="true">🔎</span> {{ . }}</p>
+              {{ end }}
+            </div>
+          </article>
+        {{ end }}
+      {{ end }}
+    </div>
+  {{ else }}
+    <div class="fun-empty">
+      <span aria-hidden="true">💎</span>
+      <p>The collection is being polished. Check back soon!</p>
+    </div>
+  {{ end }}
+
+  <p class="fun-disclaimer">Identifications are educational suggestions based on photographs. A hands-on examination may reveal more.</p>
+</div>
+
+<script defer src="{{ "js/fun-gallery.js" | relURL }}"></script>
