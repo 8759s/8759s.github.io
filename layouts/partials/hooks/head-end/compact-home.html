@@ -1,0 +1,50 @@
+{{ if .IsHome }}
+<style>
+  .service-summary, .news-summary {
+    max-width: 64rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+  .service-summary h2, .news-summary h2 {
+    margin-bottom: 0.75rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.3;
+  }
+  .activity-year {
+    display: grid;
+    grid-template-columns: 4rem minmax(0, 1fr);
+    gap: 1rem;
+  }
+  .activity-year, .activity-archive, .news-entry {
+    padding: 0.75rem 0;
+    border-top: 1px solid color-mix(in srgb, currentColor 18%, transparent);
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+  .activity-subtitle { margin: 0 0 0.5rem; font-size: 1.05rem; font-weight: 600; }
+  .activity-year h4, .activity-archive summary { font-size: inherit; font-weight: 600; }
+  .activity-year h4 { margin: 0; }
+  .activity-years ul { list-style: none; padding: 0; margin: 0; }
+  .activity-years li + li { margin-top: 0.2rem; }
+  .activity-archive summary { cursor: pointer; width: fit-content; }
+  .activity-archive summary:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
+  .activity-archive ul { margin: 0.5rem 0 0 5rem; }
+  .news-entry {
+    display: grid;
+    grid-template-columns: 7rem minmax(0, 1fr);
+    gap: 1rem;
+  }
+  .news-entry time { font-variant-numeric: tabular-nums; opacity: 0.7; }
+  .news-entry h3 { margin: 0; font-size: inherit; font-weight: 600; }
+  .news-excerpt { margin-top: 0.25rem; opacity: 0.8; }
+  .news-excerpt p { margin: 0; }
+  .news-archive-link { display: inline-block; margin-top: 0.5rem; font-size: 0.95rem; font-weight: 600; }
+  .news-summary a:hover { text-decoration: underline; text-underline-offset: 3px; }
+  .news-summary a:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
+  @media (max-width: 640px) {
+    .activity-year, .news-entry { grid-template-columns: 1fr; gap: 0.35rem; }
+    .activity-archive ul { margin-left: 0; }
+  }
+</style>
+{{ end }}

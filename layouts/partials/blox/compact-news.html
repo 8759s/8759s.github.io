@@ -1,0 +1,19 @@
+{{ $block := .wcBlock }}
+{{ $items := where site.RegularPages "Section" "in" $block.content.filters.folders }}
+{{ $items = sort $items "Date" ($block.content.order | default "desc") }}
+<div class="news-summary">
+  <h2>{{ $block.content.title }}</h2>
+  {{ range first ($block.content.count | default 3) $items }}
+  <article class="news-entry">
+    <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
+    <div>
+      <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+      {{ $summary := .Params.summary | default .Params.description | default .Summary }}
+      {{ with $summary }}<div class="news-excerpt">{{ . | $.wcPage.RenderString }}</div>{{ end }}
+    </div>
+  </article>
+  {{ end }}
+  {{ if $block.content.archive.enable }}
+  <a class="news-archive-link" href="{{ $block.content.archive.link | relLangURL }}">{{ $block.content.archive.text }} <span aria-hidden="true">→</span></a>
+  {{ end }}
+</div>

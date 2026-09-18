@@ -1,0 +1,20 @@
+{{ $block := .wcBlock }}
+<div class="service-summary">
+  <h2>{{ $block.content.title }}</h2>
+  <h3 class="activity-subtitle">{{ $block.content.subtitle }}</h3>
+  <div class="activity-years">
+    {{ range $block.content.years }}
+      {{ if .collapsed }}
+      <details class="activity-archive">
+        <summary>{{ .year }}</summary>
+        <ul>{{ range .venues }}<li>{{ . }}</li>{{ end }}</ul>
+      </details>
+      {{ else }}
+      <div class="activity-year">
+        <h4>{{ .year }}</h4>
+        <ul>{{ range .venues }}<li>{{ . }}</li>{{ end }}</ul>
+      </div>
+      {{ end }}
+    {{ end }}
+  </div>
+</div>

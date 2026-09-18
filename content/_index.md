@@ -7,7 +7,7 @@ description: "Web security researcher at Palo Alto Networks. PhD from University
 
 design:
   # Default section spacing
-  spacing: "6rem"
+  spacing: "2rem"
 
 sections:
   - block: resume-biography-3
@@ -20,7 +20,28 @@ sections:
       #   text: CV
       #   url: https://8759s.github.io/uploads/shawn_cv.pdf
 
-  - block: collection
+  - block: service
+    id: service
+    content:
+      title: Professional Activities
+      subtitle: Program Committees
+      years:
+        - year: '2027'
+          venues:
+            - USENIX Security Symposium (USENIX Security)
+        - year: '2026'
+          venues:
+            - Trustworthy AI for Good Workshop at the International Conference on Machine Learning (AI4Good @ ICML) [Organizing & Program Committee]
+            - Trustworthy AI for Good Workshop at the Conference on Neural Information Processing Systems (AI4Good @ NeurIPS) [Organizing & Program Committee]
+            - International Conference on Privacy, Security and Trust (PST)
+            - Symposium on Electronic Crime Research (eCrime)
+            - IEEE Transactions on Dependable and Secure Computing (TDSC)
+        - year: '2025'
+          collapsed: true
+          venues:
+            - IEEE Transactions on Dependable and Secure Computing (TDSC)
+
+  - block: compact-news
     id: news
     content:
       title: News
@@ -33,9 +54,6 @@ sections:
         enable: true
         link: news/
         text: View all news
-    design:
-      view: date-title-summary
-      columns: 1
   # - block: collection
   #   id: papers
   #   content:
