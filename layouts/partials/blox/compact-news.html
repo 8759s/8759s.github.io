@@ -7,9 +7,13 @@
   <article class="news-entry">
     <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
     <div>
-      <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+      {{ $link := .RelPermalink }}
+      {{ if and .Params.link_only .Params.external_link }}{{ $link = .Params.external_link }}{{ end }}
+      <h3><a href="{{ $link }}">{{ .Title }}</a></h3>
+      {{ if not .Params.link_only }}
       {{ $summary := .Params.summary | default .Params.description | default .Summary }}
       {{ with $summary }}<div class="news-excerpt">{{ . | $.wcPage.RenderString }}</div>{{ end }}
+      {{ end }}
     </div>
   </article>
   {{ end }}
